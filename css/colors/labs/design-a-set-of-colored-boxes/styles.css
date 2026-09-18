@@ -1,0 +1,52 @@
+/*
+  Lab: Design a Set of Colored Boxes
+  Purpose: Practice CSS colors using hexadecimal, RGB,
+  named colors, and HSL values.
+*/
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Color Grid */
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Color Boxes */
+
+.color-box {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* Color Formats */
+
+.color1 {
+  background-color: #ff6b6b;
+}
+
+.color2 {
+  background-color: rgb(78, 205, 196);
+}
+
+.color3 {
+  background-color: gold;
+}
+
+.color4 {
+  background-color: hsl(220, 80%, 60%);
+}
+
+.color5 {
+  background-color: #9b59b6;
+}

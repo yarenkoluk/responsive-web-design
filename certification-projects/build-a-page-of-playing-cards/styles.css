@@ -1,0 +1,49 @@
+/*
+  Certification Project: Build a Page of Playing Cards
+  Purpose: Practice CSS Flexbox alignment, spacing,
+  wrapping, and child positioning.
+*/
+
+
+/* ================================
+   Playing Cards Layout
+================================ */
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+/* ================================
+   Card
+================================ */
+
+.card {
+  display: flex;
+  justify-content: space-between;
+
+  width: 250px;
+  height: 350px;
+}
+
+
+/* ================================
+   Card Sections
+================================ */
+
+.left {
+  align-self: flex-start;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.right {
+  align-self: flex-end;
+}

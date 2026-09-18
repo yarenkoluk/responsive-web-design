@@ -1,0 +1,90 @@
+/*
+  Workshop: Design a Piano
+  Purpose: Practice responsive design, media queries,
+  floats, pseudo-elements, and CSS layout.
+*/
+
+/* Base */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Piano */
+
+#piano {
+  position: relative;
+  width: 992px;
+  height: 290px;
+  margin: 80px auto;
+  padding: 90px 20px 0;
+  background-color: #00471b;
+  border-radius: 10px;
+}
+
+/* Keys Container */
+
+.keys {
+  width: 949px;
+  height: 180px;
+  padding-left: 2px;
+  background-color: #040404;
+  overflow: hidden;
+}
+
+/* White Keys */
+
+.key {
+  position: relative;
+  float: left;
+  width: 41px;
+  height: 175px;
+  margin: 2px;
+  background-color: #fff;
+  border-radius: 0 0 3px 3px;
+}
+
+/* Black Keys */
+
+.key.black--key::after {
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+  background-color: #1d1e22;
+  border-radius: 0 0 3px 3px;
+}
+
+/* Logo */
+
+.logo {
+  position: absolute;
+  top: 23px;
+  width: 200px;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 768px) {
+  #piano {
+    width: 358px;
+  }
+
+  .keys {
+    width: 318px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+}

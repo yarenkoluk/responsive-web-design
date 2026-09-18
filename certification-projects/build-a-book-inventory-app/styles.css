@@ -1,0 +1,84 @@
+/*
+  Certification Project: Build a Book Inventory App
+  Purpose: Practice CSS attribute selectors,
+  gradients, borders, spacing, and rating indicators.
+*/
+
+/* Book Status */
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #f51, #e9ecef);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #f58, #e9ecef);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #f55, #e9ecef);
+}
+
+/* Status Labels */
+
+span {
+  display: inline-block;
+}
+
+span[class="status"],
+span[class^="rate"] {
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+}
+
+tr[class="read"] span[class="status"],
+tr[class="to-read"] span[class="status"],
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to right,
+    #ff9999,
+    #ff6666
+  );
+}
+
+/* Rating Indicators */
+
+span[class^="rate"] > span {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+/* One-Star Rating */
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(
+    to right,
+    #ffcc00,
+    #ff9900
+  );
+}
+
+/* Two-Star Rating */
+
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(
+    to right,
+    #ffcc00,
+    #ff9900
+  );
+}
+
+/* Three-Star Rating */
+
+span[class~="three"] > span {
+  background-image: linear-gradient(
+    to right,
+    #ffcc00,
+    #ff9900
+  );
+}

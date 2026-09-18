@@ -1,0 +1,114 @@
+/*
+  Workshop: Design a Cafe Menu
+  Purpose: Practice fundamental CSS styling, layout, typography,
+  backgrounds, borders, spacing, and link states.
+*/
+
+/* Base Styles */
+
+body {
+  background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-family: Impact, serif;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0 0 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+/* Menu */
+
+.menu {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: burlywood;
+}
+
+.established {
+  font-style: italic;
+}
+
+/* Images */
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Separators */
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* Menu Items */
+
+.item p {
+  display: inline-block;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.flavor,
+.dessert {
+  width: 75%;
+  text-align: left;
+}
+
+.price {
+  width: 25%;
+  text-align: right;
+}
+
+/* Footer */
+
+footer {
+  font-size: 14px;
+}
+
+address {
+  font-style: normal;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+/* Links */
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: brown;
+}

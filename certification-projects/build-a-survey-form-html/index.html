@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Feedback Survey</title>
+</head>
+
+<body>
+  <!--
+    Certification Project: Build a Survey Form
+    Purpose: Practice accessible HTML forms, validation,
+    input controls, dropdowns, radio buttons, checkboxes,
+    and textareas.
+  -->
+
+  <main class="container">
+    <h1 id="title">Developer Feedback Survey</h1>
+
+    <p id="description">
+      Thank you for taking the time to help us improve our
+      developer tools and resources.
+    </p>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">
+          Years of Experience
+        </label>
+
+        <input
+          type="number"
+          id="number"
+          name="experience"
+          min="0"
+          max="50"
+          placeholder="Enter years of experience"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown">
+          Which option best describes your current role?
+        </label>
+
+        <select id="dropdown" name="role">
+          <option value="" disabled selected>
+            Select your current role
+          </option>
+          <option value="student">Student</option>
+          <option value="junior-developer">Junior Developer</option>
+          <option value="full-time-developer">Full-Time Developer</option>
+          <option value="freelance-developer">Freelance Developer</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Would you recommend our platform to a friend?</legend>
+
+        <label>
+          <input
+            type="radio"
+            name="recommend"
+            value="definitely"
+          >
+          Definitely
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="recommend"
+            value="maybe"
+          >
+          Maybe
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="recommend"
+            value="not-sure"
+          >
+          Not sure
+        </label>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend>
+          What would you like to see improved?
+        </legend>
+
+        <label>
+          <input
+            type="checkbox"
+            name="improvement"
+            value="front-end"
+          >
+          Front-end Projects
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="improvement"
+            value="back-end"
+          >
+          Back-end Projects
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="improvement"
+            value="data-visualization"
+          >
+          Data Visualization
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="improvement"
+            value="documentation"
+          >
+          Documentation
+        </label>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="comments">
+          Any comments or suggestions?
+        </label>
+
+        <textarea
+          id="comments"
+          name="comments"
+          rows="5"
+          placeholder="Enter your comments or suggestions here..."
+        ></textarea>
+      </div>
+
+      <button type="submit" id="submit">
+        Submit
+      </button>
+
+    </form>
+  </main>
+</body>
+
+</html>

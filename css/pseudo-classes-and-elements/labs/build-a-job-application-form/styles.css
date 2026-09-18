@@ -1,0 +1,142 @@
+/*
+  Lab: Build a Job Application Form
+  Purpose: Practice form validation and interactive
+  pseudo-classes such as :focus, :valid, :invalid,
+  :checked, :hover, and :first-of-type.
+*/
+
+/* Base Styles */
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #eef2ff;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+/* Container */
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* Form */
+
+form h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Form Groups */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+/* First Input */
+
+input:first-of-type {
+  border-radius: 15px;
+}
+
+/* Focus State */
+
+input:focus,
+textarea:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+/* Invalid State */
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: #dc2626;
+}
+
+/* Valid State */
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: #16a34a;
+}
+
+/* Availability */
+
+.radio-group {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.radio-group legend {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+.radio-option {
+  margin: 12px 0;
+}
+
+.radio-option input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+  accent-color: #6366f1;
+}
+
+.radio-option input[type="radio"]:checked {
+  border-color: #6366f1;
+  background-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.radio-option input[type="radio"]:checked + label {
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+/* Submit Button */
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4f46e5;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3730a3;
+}

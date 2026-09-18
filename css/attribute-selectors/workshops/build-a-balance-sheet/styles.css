@@ -1,0 +1,174 @@
+/*
+  Workshop: Build a Balance Sheet
+  Purpose: Practice attribute selectors, table styling,
+  accessibility, sticky elements, and pseudo-classes.
+*/
+
+/* Screen Reader Only */
+
+span[class~="sr-only"] {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* Base */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #0a0a23;
+}
+
+/* Heading */
+
+h1 {
+  max-width: 37.25rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+h1 .flex span:first-of-type {
+  font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+  font-size: 1.2em;
+}
+
+/* Main Section */
+
+section {
+  max-width: 40rem;
+  margin: 0 auto;
+  border: 2px solid #d0d0d5;
+}
+
+/* Year Header */
+
+#years {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  margin: 0 -2px;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  background: #0a0a23;
+  color: #fff;
+}
+
+#years span[class] {
+  width: 4.5rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Tables */
+
+.table-wrap {
+  padding: 0 0.75rem 1.5rem;
+}
+
+table {
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  border: 0;
+  border-collapse: collapse;
+}
+
+table caption {
+  position: absolute;
+  top: -2.25rem;
+  left: 0.5rem;
+  color: #356eaf;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+
+tbody td {
+  width: 4rem;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}
+
+/* Total Rows */
+
+tr[class="total"] {
+  border-bottom: 4px double #0a0a23;
+  font-weight: bold;
+}
+
+tr[class="total"] th {
+  padding: 0.5rem 0 0.25rem 0.5rem;
+  text-align: left;
+}
+
+tr.total td {
+  padding: 0 0.25rem;
+  text-align: right;
+}
+
+tr.total td:nth-of-type(3) {
+  padding-right: 0.5rem;
+}
+
+tr.total:hover {
+  background-color: #99c9ff;
+}
+
+/* Current Year */
+
+td.current {
+  font-style: italic;
+}
+
+/* Data Rows */
+
+tr.data {
+  background-image:
+    linear-gradient(
+      to bottom,
+      #dfdfe2 1.845rem,
+      white 1.845rem
+    );
+}
+
+tr.data th {
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+tr.data th .description {
+  display: block;
+  margin-right: -13.5rem;
+  padding: 1rem 0 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+tr.data td {
+  padding: 0.3rem 0.25rem 0;
+  vertical-align: top;
+  text-align: right;
+}

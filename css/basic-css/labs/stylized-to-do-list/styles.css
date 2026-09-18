@@ -1,0 +1,94 @@
+/*
+  Lab: Build a Stylized To-Do List
+  Purpose: Practice CSS link states, spacing, colors,
+  typography, and list styling.
+*/
+
+/* Base Styles */
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #f4f1ea;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Main Content */
+
+main {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* To-Do List */
+
+.todo-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.todo-list > li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.todo-list label {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* Sub Items */
+
+.sub-item {
+  margin-top: 10px;
+  padding-left: 30px;
+}
+
+.sub-item li {
+  margin-bottom: 5px;
+}
+
+/* Links */
+
+.sub-item-link {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+/* Visited State */
+
+.sub-item-link:visited {
+  color: #7c3aed;
+}
+
+/* Hover State */
+
+.sub-item-link:hover {
+  color: #059669;
+}
+
+/* Focus State */
+
+.sub-item-link:focus {
+  outline: 2px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+/* Active State */
+
+.sub-item-link:active {
+  color: #dc2626;
+}

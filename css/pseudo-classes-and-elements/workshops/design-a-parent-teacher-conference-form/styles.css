@@ -1,0 +1,123 @@
+/*
+  Workshop: Design a Parent Teacher Conference Form
+  Purpose: Practice form styling, pseudo-classes,
+  pseudo-elements, and attribute-based selectors.
+*/
+
+/* Base Styles */
+
+body {
+  margin: 0;
+  background-color: midnightblue;
+  color: whitesmoke;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Container */
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ffffff1a;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px black;
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+.center {
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+/* Fieldsets */
+
+fieldset {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+fieldset legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Labels */
+
+label {
+  font-size: 1.2rem;
+}
+
+label:not(.contact-method) {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Text Inputs and Textarea */
+
+input:not(.contact-method-radio-btn),
+textarea {
+  width: 95%;
+  padding: 10px;
+  background-color: #ffffff1a;
+  color: whitesmoke;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: whitesmoke;
+}
+
+textarea {
+  color: whitesmoke;
+}
+
+/* Contact Method Radio Buttons */
+
+.contact-method-radio-btn {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+
+.contact-method-radio-btn::before {
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 50%;
+  transform: translate(3px, 3px) scale(0);
+  transition: transform 0.3s ease-in;
+}
+
+.contact-method-radio-btn:checked::before {
+  background-color: lightgreen;
+  transform: translate(3px, 3px) scale(1);
+}
+
+/* Submit Button */
+
+.submit-btn {
+  display: block;
+  margin: auto;
+  padding: 12px 20px;
+  background-color: royalblue;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}

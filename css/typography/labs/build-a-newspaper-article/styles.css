@@ -1,0 +1,76 @@
+/*
+  Lab: Build a Newspaper Article
+  Purpose: Practice CSS typography, relative units,
+  text spacing, font styling, and pseudo-elements.
+*/
+
+/* Base */
+
+html {
+  font-size: 24px;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f1ea;
+}
+
+/* Newspaper */
+
+.newspaper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Newspaper Header */
+
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.date {
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Article Heading */
+
+.headline {
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sub-headline {
+  margin-top: 0;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Author */
+
+.author {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Article Text */
+
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+}
+
+.text::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}

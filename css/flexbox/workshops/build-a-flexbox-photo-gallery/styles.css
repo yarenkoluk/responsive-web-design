@@ -1,0 +1,59 @@
+/*
+  Workshop: Build a Flexbox Photo Gallery
+  Purpose: Practice Flexbox layout, wrapping, alignment,
+  spacing, and responsive image sizing.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Page */
+
+body {
+  margin: 0;
+  background-color: #f5f6f7;
+  font-family: sans-serif;
+}
+
+/* Header */
+
+.header {
+  padding: 32px;
+  background-color: #0a0a23;
+  border-bottom: 4px solid #fdb347;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+/* Images */
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Final Row */
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}

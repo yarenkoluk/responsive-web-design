@@ -1,0 +1,73 @@
+/*
+  Lab: Design a Feature Selection Page
+  Purpose: Practice custom checkbox styling, labels,
+  pseudo-classes, and checked states.
+*/
+
+/* Page */
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #eef2f7;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Feature Cards */
+
+.feature-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Custom Checkboxes */
+
+.feature-card input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border: 2px solid #64748b;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Checked State */
+
+.feature-card input[type="checkbox"]:checked {
+  position: relative;
+  background-color: #2563eb;
+  border-color: #1d4ed8;
+}
+
+.feature-card input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}

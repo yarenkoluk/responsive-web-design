@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--
+    Certification Project: Build a Technical Documentation Page
+    Purpose: Practice semantic HTML, navigation links,
+    documentation sections, lists, and code elements.
+  -->
+
+  <nav id="navbar">
+    <header>Web Development</header>
+
+    <ul>
+      <li>
+        <a class="nav-link" href="#HTML_and_CSS">
+          HTML and CSS
+        </a>
+      </li>
+
+      <li>
+        <a class="nav-link" href="#JavaScript">
+          JavaScript
+        </a>
+      </li>
+
+      <li>
+        <a class="nav-link" href="#Python_and_Django">
+          Python and Django
+        </a>
+      </li>
+
+      <li>
+        <a class="nav-link" href="#APIs">
+          APIs
+        </a>
+      </li>
+
+      <li>
+        <a class="nav-link" href="#Development_Workflow">
+          Development Workflow
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="HTML_and_CSS">
+      <header>HTML and CSS</header>
+
+      <p>
+        HTML provides the structure of a web page, while CSS controls
+        its visual presentation and layout.
+      </p>
+
+      <p>
+        A basic document uses semantic HTML elements and can be styled
+        with an external stylesheet such as
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.
+      </p>
+
+      <ol>
+        <li>HTML defines the structure and content.</li>
+        <li>CSS controls layout, colors, spacing, and typography.</li>
+      </ol>
+    </section>
+
+    <section class="main-section" id="JavaScript">
+      <header>JavaScript</header>
+
+      <p>
+        JavaScript adds behavior and interactivity to web pages.
+        It can respond to user actions and manipulate the document.
+      </p>
+
+      <p>
+        Developers can use the browser console to test JavaScript
+        expressions and inspect application behavior.
+      </p>
+
+      <ol>
+        <li>Variables store application data.</li>
+        <li>Functions organize reusable logic.</li>
+        <li>Events allow applications to respond to user interaction.</li>
+      </ol>
+
+      <p>
+        A simple message can be displayed with
+        <code>console.log("Hello World");</code>.
+      </p>
+    </section>
+
+    <section class="main-section" id="Python_and_Django">
+      <header>Python and Django</header>
+
+      <p>
+        Python is a general-purpose programming language commonly used
+        for backend development, automation, and data-related tasks.
+      </p>
+
+      <p>
+        Django is a Python web framework that provides tools for
+        building structured and maintainable web applications.
+      </p>
+
+      <ol>
+        <li>Python provides the programming language.</li>
+        <li>Django provides the web application framework.</li>
+        <li>Applications can be organized into reusable components.</li>
+      </ol>
+
+      <p>
+        A Django development server can be started with
+        <code>python manage.py runserver</code>.
+      </p>
+    </section>
+
+    <section class="main-section" id="APIs">
+      <header>APIs</header>
+
+      <p>
+        An API allows different software systems to communicate with
+        each other through defined requests and responses.
+      </p>
+
+      <p>
+        Web APIs commonly use HTTP methods to work with resources.
+        Common methods include GET, POST, PUT, PATCH, and DELETE.
+      </p>
+
+      <ol>
+        <li>GET retrieves data from a resource.</li>
+        <li>POST sends data to create a resource.</li>
+        <li>PUT or PATCH updates an existing resource.</li>
+        <li>DELETE removes a resource.</li>
+      </ol>
+
+      <p>
+        A client can request data from an endpoint such as
+        <code>/api/products/</code>.
+      </p>
+    </section>
+
+    <section class="main-section" id="Development_Workflow">
+      <header>Development Workflow</header>
+
+      <p>
+        A consistent development workflow makes projects easier to
+        maintain, test, and collaborate on.
+      </p>
+
+      <p>
+        Version control systems such as Git allow developers to track
+        changes and work safely with branches.
+      </p>
+
+      <ol>
+        <li>Plan the feature or problem to be solved.</li>
+        <li>Implement the required changes.</li>
+        <li>Test the application.</li>
+        <li>Commit the completed work with a clear message.</li>
+        <li>Review and deploy the project when appropriate.</li>
+      </ol>
+
+      <p>
+        A common Git workflow starts with
+        <code>git status</code> to inspect the current repository state.
+      </p>
+    </section>
+
+  </main>
+</body>
+
+</html>

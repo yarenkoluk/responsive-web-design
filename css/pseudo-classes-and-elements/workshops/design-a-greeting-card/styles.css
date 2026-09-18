@@ -1,0 +1,99 @@
+/*
+  Workshop: Design a Greeting Card
+  Purpose: Practice pseudo-classes, pseudo-elements,
+  transitions, hover effects, and interactive links.
+*/
+
+/* Base Styles */
+
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: brown;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Greeting Card */
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px gray;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: khaki;
+  transform: scale(1.05);
+}
+
+/* Pseudo-elements */
+
+h1::before {
+  content: "🥳 ";
+}
+
+h1::after {
+  content: " 🥳";
+}
+
+/* Message */
+
+.message {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+/* Card Links */
+
+.card-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card-links a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: midnightblue;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-links a:hover {
+  background-color: orangered;
+}
+
+.card-links a:active {
+  background-color: midnightblue;
+}
+
+.card-links a:focus {
+  outline: 2px solid yellow;
+}
+
+.card-links a:visited {
+  color: crimson;
+}
+
+/* Sections */
+
+section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: skewX(10deg);
+}

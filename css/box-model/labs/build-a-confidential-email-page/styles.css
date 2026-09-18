@@ -1,0 +1,50 @@
+/*
+  Lab: Build a Confidential Email Page
+  Purpose: Practice the CSS box model, inline-block elements,
+  transforms, borders, margins, and filters.
+*/
+
+/* Email Container */
+
+#email {
+  width: 500px;
+  margin: 50px auto 0;
+  padding: 50px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Confidential Labels */
+
+#confidential,
+#top-secret {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: 2px solid #b91c1c;
+  font-weight: bold;
+}
+
+#confidential {
+  color: #b91c1c;
+  transform: rotate(-4deg);
+}
+
+#top-secret {
+  color: #7f1d1d;
+  transform: rotate(3deg);
+}
+
+/* Email Content */
+
+p {
+  line-height: 1.6;
+}
+
+/* Blurred Information */
+
+.blurred {
+  filter: blur(3px);
+}

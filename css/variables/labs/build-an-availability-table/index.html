@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Availability</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--
+    Lab: Build an Availability Table
+    Purpose: Practice CSS variables, table accessibility,
+    gradients, and conditional visual styling.
+  -->
+
+  <main>
+    <h1>Weekly Meeting Availability</h1>
+
+    <table>
+      <caption>Weekly Meeting Availability Schedule</caption>
+
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesday</th>
+          <th scope="col">Wednesday</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="sharp">
+          <th class="time" scope="row">09:00</th>
+          <td class="available-2" aria-label="2 available"></td>
+          <td class="available-4" aria-label="4 available"></td>
+          <td class="available-1" aria-label="1 available"></td>
+          <td class="available-3" aria-label="3 available"></td>
+          <td class="available-5" aria-label="5+ available"></td>
+        </tr>
+
+        <tr class="half">
+          <th class="time" scope="row">10:00</th>
+          <td class="available-3" aria-label="3 available"></td>
+          <td class="available-2" aria-label="2 available"></td>
+          <td class="available-5" aria-label="5+ available"></td>
+          <td class="available-1" aria-label="1 available"></td>
+          <td class="available-4" aria-label="4 available"></td>
+        </tr>
+
+        <tr class="sharp">
+          <th class="time" scope="row">11:00</th>
+          <td class="available-5" aria-label="5+ available"></td>
+          <td class="available-3" aria-label="3 available"></td>
+          <td class="available-2" aria-label="2 available"></td>
+          <td class="available-4" aria-label="4 available"></td>
+          <td class="available-0" aria-label="0 available"></td>
+        </tr>
+
+        <tr class="half">
+          <th class="time" scope="row">13:00</th>
+          <td class="available-1" aria-label="1 available"></td>
+          <td class="available-4" aria-label="4 available"></td>
+          <td class="available-3" aria-label="3 available"></td>
+          <td class="available-5" aria-label="5+ available"></td>
+          <td class="available-2" aria-label="2 available"></td>
+        </tr>
+
+        <tr class="sharp">
+          <th class="time" scope="row">14:00</th>
+          <td class="available-4" aria-label="4 available"></td>
+          <td class="available-1" aria-label="1 available"></td>
+          <td class="available-0" aria-label="0 available"></td>
+          <td class="available-2" aria-label="2 available"></td>
+          <td class="available-5" aria-label="5+ available"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="legend">
+      <span>Availability</span>
+      <div id="legend-gradient"></div>
+    </div>
+  </main>
+</body>
+
+</html>
