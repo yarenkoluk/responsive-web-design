@@ -209,7 +209,7 @@ Certification:
 
 **Responsive Web Design Certification — freeCodeCamp**
 
-Certificate: [Add certificate link here]
+
 
 ---
 
