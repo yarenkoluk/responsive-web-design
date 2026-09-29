@@ -69,6 +69,8 @@ responsive-web-design/
     ├── build-a-product-landing-page/
     ├── build-a-survey-form-html/
     └── build-a-technical-documentation-page/
+├── certificates/
+│   └── Responsive-Web-Design-Certificate.pdf
 ```
 
 ---
