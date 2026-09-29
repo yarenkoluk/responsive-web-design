@@ -205,9 +205,10 @@ The next stage of my learning roadmap is to continue with backend development an
 
 This repository accompanies my **freeCodeCamp Responsive Web Design** learning journey.
 
-Certification:
-
 **Responsive Web Design Certification — freeCodeCamp**
+
+[View Certificate](https://www.freecodecamp.org/certification/yarencetokoluk/responsive-web-design-v9)
+
 
 
 
